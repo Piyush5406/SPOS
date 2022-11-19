@@ -1,0 +1,4 @@
+javac b1.java
+javah b1
+gcc -fpic -i"link" -i "Link with linux " -shared -o libb1.so b1.c
+java -Djava.library.path=. b1
